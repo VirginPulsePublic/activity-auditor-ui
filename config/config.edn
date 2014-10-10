@@ -1,0 +1,41 @@
+{
+ :dev {
+   :database {:classname "org.postgresql.Driver"
+        :subprotocol "postgresql"
+        :name "mydb"
+        :hostname "myhost"
+        :portname "5432"
+        :username "myuser"
+        :pass "mypass"}
+ }
+
+ :qa {
+   :database {:classname "org.postgresql.Driver"
+        :subprotocol "postgresql"
+        :name "mydb"
+        :hostname "myhost"
+        :portname "5432"
+        :username "myuser"
+        :pass "mypass"}
+ }
+
+ :stage {
+   :database {:classname "org.postgresql.Driver"
+        :subprotocol "postgresql"
+        :name "mydb"
+        :hostname "myhost"
+        :portname "5432"
+        :username "myuser"
+        :pass "mypass"}
+ }
+
+ :prod {
+   :database {:classname "org.postgresql.Driver"
+        :subprotocol "postgresql"
+        :name "mydb"
+        :hostname "myhost"
+        :portname "5432"
+        :username "myuser"
+        :pass "mypass"}
+ }
+}

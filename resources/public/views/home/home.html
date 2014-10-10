@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>Welcome to Activity Auditor!</h1>
+            <input ng-model="query" ng-enter="search(query)" autocomplete="off" autofocus="autofocus" class="query" id="query" placeholder="SEARCH*" type="search"/>
+            <h4>* Type here to search (e.g 2014-10-07).</h4>
+            <div ng-show="error" class="error">
+                <h4>Uh Oh... Error!</h4>
+                <pre>{{error}}</pre>
+            </div>
+            <div ng-show="results" class="success">
+                <h4>Nailed it!</h4>
+                <pre>Search yielded {{results.length}} results.</pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" ng-show="loading">
+        <div class="col-md-8">
+            <h2 class="loader"><i class="fa fa-spinner fa-spin"></i></h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 results">
+            <div class="entry" ng-repeat="result in results">
+                <h2><i class="fa fa-calendar"></i>
+                    {{result.timestamp}}
+                </h2>
+                <div class="meta">
+                    SQS Message Id: {{result.id}}
+                </div>
+                <pre ng-bind-html="result.message | highlight:query:false"></pre>
+            </div>
+        </div>
+    </div>
+</div>
