@@ -1,6 +1,6 @@
 # Activity-Auditor-UI
 
-An AngularJS/Clojure UI for [Activity Auditor] (https://github.com/thoersch/activity-auditor) allowing quick searching of audited SQS messages.
+An AngularJS/Clojure UI for [Activity Auditor] (https://github.com/VirginPulsePublic/activity-auditor) allowing quick searching of audited SQS messages.
 
 ## Usage
 

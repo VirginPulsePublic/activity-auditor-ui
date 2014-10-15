@@ -56,7 +56,7 @@
      }
   }
   :resource-paths ["resources" "config"]
-  :url "http://github.com/thoersch/activity-auditor-ui"
+  :url "https://github.com/VirginPulsePublic/activity-auditor-ui"
   :aot
   :all
   :plugins [[lein-ring "0.8.7"] [lein-environ "0.4.0"] [ragtime/ragtime.lein "0.3.4"]]
